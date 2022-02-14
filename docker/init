@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+DIR=$(readlink -e $(dirname $0))
+
+echo ${DIR}
+
+docker-compose -f ${DIR}/docker-compose.yml exec mysql mysql -htesttask-mysql -utesttask -ptesttask -e "CREATE DATABASE testtask;"
+docker-compose -f ${DIR}/docker-compose.yml exec mysql mysql -htesttask-mysql -utesttask --database=testtask -ptesttask -e "ALTER DATABASE CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;"
+

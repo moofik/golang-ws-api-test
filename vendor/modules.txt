@@ -1,0 +1,33 @@
+# github.com/go-sql-driver/mysql v1.6.0
+## explicit; go 1.10
+github.com/go-sql-driver/mysql
+# github.com/gorilla/websocket v1.4.2
+## explicit; go 1.12
+github.com/gorilla/websocket
+# github.com/jinzhu/inflection v1.0.0
+## explicit
+github.com/jinzhu/inflection
+# github.com/jinzhu/now v1.1.4
+## explicit; go 1.12
+github.com/jinzhu/now
+# gorm.io/datatypes v1.0.5
+## explicit; go 1.14
+gorm.io/datatypes
+# gorm.io/driver/mysql v1.2.2
+## explicit; go 1.14
+gorm.io/driver/mysql
+# gorm.io/driver/postgres v1.2.3
+## explicit; go 1.14
+# gorm.io/driver/sqlite v1.2.6
+## explicit; go 1.14
+# gorm.io/driver/sqlserver v1.2.1
+## explicit; go 1.14
+# gorm.io/gorm v1.22.5
+## explicit; go 1.14
+gorm.io/gorm
+gorm.io/gorm/callbacks
+gorm.io/gorm/clause
+gorm.io/gorm/logger
+gorm.io/gorm/migrator
+gorm.io/gorm/schema
+gorm.io/gorm/utils
