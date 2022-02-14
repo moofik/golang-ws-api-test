@@ -5,7 +5,6 @@
 package controller
 
 import (
-	"fmt"
 	"github.com/gorilla/websocket"
 	"log"
 	"net/http"
@@ -91,7 +90,6 @@ func (c *WebsocketController) buildResponse() {
 	for {
 		select {
 		case message, ok := <-c.Send:
-			fmt.Println("MUSOR IS SENT CHANELA, ", string(message))
 			c.conn.SetWriteDeadline(time.Now().Add(writeWait))
 			if !ok {
 				// The pool closed the channel.

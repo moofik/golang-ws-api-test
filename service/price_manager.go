@@ -172,11 +172,11 @@ func (m *PriceManager) Broadcast(client chan []byte, fsyms []string, tsyms []str
 func loadLocalApiData(r *model.PriceRepository, q *ApiQuery) ([]byte, error) {
 	tsyms, err := json.Marshal(q.Tsyms)
 	if err != nil {
-		fmt.Printf("Error: %m", err.Error())
+		return nil, err
 	}
 	fsyms, err := json.Marshal(q.Fsyms)
 	if err != nil {
-		fmt.Printf("Error: %m", err.Error())
+		return nil, err
 	}
 
 	result := r.FindByTsymsAndFsyms(string(fsyms), string(tsyms))
